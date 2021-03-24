@@ -1,0 +1,242 @@
+.inter {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  height: 880px;
+
+  background: $g-main;
+
+  align-items: center;
+
+  @media (orientation: landscape) {
+    height: 100vh;
+  }
+
+  @media ($m-s) {
+    height: 930px;
+    padding: 50px 25px 68px;
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    height: 100vh;
+  }
+
+  @media ($m-xl) {
+    padding: 120px 110px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    & > h2 {
+      justify-content: center;
+
+      font-size: 27px;
+      line-height: 33px;
+
+      @media ($m-s) {
+        font-size: 40px;
+        line-height: 49px;
+      }
+
+      @media ($m-xl) {
+        margin-bottom: 40px;
+        text-align: left;
+      }
+    }
+
+    & > p {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 30px;
+
+      @media (orientation: landscape) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      @media ($m-xxxsl) and (orientation: landscape) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @media ($m-s) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      @media ($m-xl) {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__icon {
+    color: $c-white;
+    width: 80px;
+    height: 80px;
+
+    @media (orientation: landscape) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media ($m-xxs) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media ($m-xxs) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+
+    @media (orientation: landscape) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    @media ($m-s) {
+      flex-direction: row;
+      flex-grow: 0;
+      align-items: baseline;
+    }
+
+    @media ($m-xl) {
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: fit-content;
+
+      text-align: center;
+
+      &--no-align {
+        align-self: flex-start;
+      }
+
+      @media ($m-xl) {
+        flex-direction: row;
+        margin: 0 0 56px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+      }
+
+      & > p {
+        margin: 20px 0 0;
+
+        @media (orientation: landscape) {
+          margin: 10px 0 0;
+        }
+
+        @media ($m-xxxsl) and (orientation: landscape) {
+          margin: 15px 0 0;
+        }
+
+        @media ($m-xl) {
+          margin: 0 0 0 24px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__map {
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+    top: 263px;
+    left: -185px;
+
+    width: 673px;
+    height: 451px;
+
+    mix-blend-mode: screen;
+
+    @media (orientation: landscape) {
+      top: 0;
+      left: 0;
+
+      opacity: 0.4;
+    }
+
+    @media ($m-s) {
+      width: 815px;
+      height: auto;
+      top: 183px;
+      left: -44px;
+      right: -143px;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+      width: 955px;
+      height: 642px;
+      top: 110px;
+      left: 45px;
+    }
+
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      width: 90%;
+      top: 90px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    @media ($m-l) {
+      width: 90%;
+      top: 90px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    @media ($m-xl) {
+      width: 100%;
+      bottom: 0;
+      top: 0;
+      left: auto;
+      right: -600px;
+      opacity: 1;
+    }
+
+    @media ($m-xxxl) {
+      right: 0;
+      top: 120px;
+
+      width: 1250px;
+      height: 896px;
+      
+      opacity: 1;
+    }
+
+    & > img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

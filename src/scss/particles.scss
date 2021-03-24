@@ -1,0 +1,65 @@
+.particles {
+    position: absolute;
+    z-index: 5;
+
+    display: none;
+
+    & > svg {
+        width: auto;
+        height: auto;
+    }
+
+    @media ($m-xxs) {
+        display: flex;
+        max-width: 110px;
+        max-height: 110px;
+    }
+
+    @media ($m-s) {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    @media ($m-mm) {
+        max-width: 240px;
+        max-height: 240px;
+    }
+
+    @media ($m-mm) {
+        max-width: 290px;
+        max-height: 290px;
+    }
+
+    &--first {
+        top: -40px;
+        left: -45px;
+
+        color: #FF41FF;
+    }
+
+    &--second {
+        top: -50px;
+        left: -15px;
+
+        color: #FF41FF;
+    }
+
+    &--left {
+        bottom: -45px;
+        left: -20px;
+
+        color: #FF41FF;
+    }
+
+    &--right {
+        bottom: -40px;
+        right: -40px;
+
+        color: #00D3FF;
+    }
+
+    &--right-lower {
+        bottom: -80px;
+    }
+
+}

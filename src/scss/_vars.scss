@@ -1,0 +1,53 @@
+// Media
+$m-xxxxs: "min-width: 320px";
+$m-xxxsa: "min-width: 360px";
+$m-xxxs: "min-width: 375px";
+$m-xxxsl: "min-width: 667px";
+$m-xxs: "min-width: 411px";
+$m-xs: "min-width: 568px";
+$m-s: "min-width: 768px";
+$m-m: "min-width: 992px";
+$m-mm: "min-width: 1024px";
+$m-l: "min-width: 1280px";
+$m-imm: "min-height: 950px";
+$m-ipw: "min-width: 1366px";
+$m-iph: "min-height: 1366px";
+$m-xl: "min-width: 1440px";
+$m-xxl: "min-width: 1600px";
+$m-xxxl: "min-width: 1720px";
+$m-xxxlh: "min-height: 1080px";
+$m-2k: "min-width: 2500px";
+$m-4k: "min-width: 3800px";
+
+$ma-xxs: "max-width: 376px";
+$ma-xs: "max-width: 568px";
+$ma-s: "max-width: 667px";
+$ma-m: "max-width: 991px";
+$ma-l: "max-width: 1279px";
+$ma-xl: "max-width: 1439px";
+$ma-xxl: "max-width: 1599px";
+
+// Colors
+$c-white: #ffffff;
+$c-gray: #5e5e5e;
+$c-black: #000000;
+$c-gray: #2d2b32;
+$c-deep-purple: #5d20a8;
+$c-purple: #9700a8;
+$c-light-blue: #007Ba8;
+$c-dark-blue: #1f43a8;
+
+
+// Fonts
+$mont: 'Montserrat', Arial, sans-serif;
+$raleway: 'Raleway', Arial, sans-serif;
+$SFPro: 'SFPro', Arial, sans-serif;
+$PTRootUI: 'PTRootUI', Arial, sans-serif;
+
+// Gradients
+$g-main: linear-gradient(239.31deg, #0080A8 25.5%, #006BA8 38.58%, #2D3AA8 57.89%, #631DA8 74.06%, #9700A8 86.53%);
+
+html,
+body {
+  background: $c-white;
+}

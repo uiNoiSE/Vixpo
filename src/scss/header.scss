@@ -1,0 +1,148 @@
+header {
+    position: relative;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    padding: 40px 10px;
+    justify-content: space-between;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
+
+    @media (orientation: landscape) {
+        padding: 20px 10px 20px;
+    }
+
+    @media ($m-s) {
+        padding: 40px 35px 100px;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+        padding: 40px 80px 100px;
+    }
+
+    @media ($m-xl) {
+        height: 100vh;
+    }
+}
+
+.header__bg {
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.header__logo {
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    height: 35px;
+
+    color: $c-white;
+
+    @media ($m-s) {
+        height: 40px;
+    }
+}
+
+.header__parallax-logo {
+    display: none;
+
+    @media ($m-mm) and (hover: hover) {
+        display: flex;
+    }
+
+    & > * {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    &-layer1 {
+        width: 1088px;
+        height: 331px;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-layer2 {
+        width: 1294px;
+        height: 292.67px;
+        top: -65px;
+        left: -15px;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.header__regular-logo {
+    z-index: 1;
+
+    display: flex;
+
+    @media (orientation: landscape) {
+        position: relative;
+        top: 15px;
+    }
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media ($m-mm) {
+        display: none;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+        display: flex;
+        position: relative;
+        top: 15px;
+    }
+
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        display: flex;
+    }
+}
+
+.header-text-wrap {
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    & > p {
+        display: inline-flex;
+        justify-content: center;
+
+        margin-bottom: 16px;
+
+        font-family: $mont;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 39px;
+
+        letter-spacing: 0.7em;
+        color: $c-white;
+    }
+}
